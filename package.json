@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@vercel/og": "^0.8.5",
@@ -34,8 +34,7 @@
     "extends": [
       "next/core-web-vitals",
       "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier"
+      "plugin:@typescript-eslint/recommended"
     ]
   },
   "prettier": {
