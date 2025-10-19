@@ -54,7 +54,8 @@ export function OrderTool() {
                         順番を決める
                     </button>
                     {error ? <p className="text-sm text-rose-600">{error}</p> : null}
-                    <AdSlot label="入力画面下部バナー" description="小型バナー広告を想定。" />
+                    {/* 広告枠（実際の広告を挿入する際に使用） */}
+                    <AdSlot />
                 </section>
                 <aside className="space-y-6">
                     <div className="card space-y-4">

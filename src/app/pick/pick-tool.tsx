@@ -56,7 +56,8 @@ export function PickTool() {
                         抽選する
                     </button>
                     {error ? <p className="text-sm text-rose-600">{error}</p> : null}
-                    <AdSlot label="入力画面下部バナー" description="スクロール時に表示される小型バナー広告枠。" />
+                    {/* 広告枠（実際の広告を挿入する際に使用） */}
+                    <AdSlot />
                 </section>
                 <aside className="space-y-6">
                     <div className="card space-y-4">
@@ -86,7 +87,8 @@ export function PickTool() {
                                 )}
                             </AnimatePresence>
                         </div>
-                        <AdSlot label="結果上部ネイティブ広告" description="抽選後に表示するネイティブ枠。" />
+                        {/* 広告枠（実際の広告を挿入する際に使用） */}
+                        <AdSlot />
                     </div>
                     <div className="card space-y-4">
                         <h3 className="text-sm font-semibold text-slate-800">最近の抽選結果</h3>

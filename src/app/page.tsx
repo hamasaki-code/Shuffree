@@ -89,7 +89,8 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex flex-col justify-between gap-6">
-          <AdSlot label="ホーム上部バナー" description="BuySellAds の300×250枠を想定した広告コンポーネント。" className="h-full" />
+          {/* 広告枠（実際の広告を挿入する際に使用） */}
+          <AdSlot className="h-full" />
         </div>
       </section>
 
@@ -137,21 +138,11 @@ export default function HomePage() {
 
       <section className="grid gap-6 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-800 p-10 text-white shadow-lg sm:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold">アクセスが増えるほど広告収益もアップ</h2>
-          <p className="text-sm leading-relaxed text-slate-200">
-            BuySellAdsの広告枠を標準搭載。Cloudflare Pagesの無料枠で運用できるため、初期費用ゼロで継続的な収益化が可能です。
-          </p>
-          <p className="text-sm leading-relaxed text-slate-200">
-            結果画面・入力フォーム・ホームに自然な形で広告を配置しながら、ツール本来の使いやすさはそのまま。教育現場でも配慮したUIで運営できます。
-          </p>
+          {/* 広告に関する説明は現在非表示です */}
         </div>
-        <AdSlot
-          label="結果画面ネイティブ広告"
-          description="結果生成後に表示される想定のネイティブ広告枠。スクロール追従やレスポンシブに対応予定。"
-          className="bg-white/10 text-white"
-        />
+        {/* 広告枠（実際の広告を挿入する際に使用） */}
+        <AdSlot className="bg-white/10 text-white" />
       </section>
     </div>
   )
 }
-

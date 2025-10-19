@@ -58,7 +58,8 @@ export function TournamentTool() {
                         トーナメント表を作成
                     </button>
                     {error ? <p className="text-sm text-rose-600">{error}</p> : null}
-                    <AdSlot label="入力画面下部バナー" description="トーナメント作成時に表示する広告枠。" />
+                    {/* 広告枠（実際の広告を挿入する際に使用） */}
+                    <AdSlot />
                 </section>
                 <aside className="space-y-6">
                     <div className="card space-y-4">
