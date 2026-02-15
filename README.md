@@ -24,5 +24,3 @@ npm run build
 npm run start
 ```
 SSGされた出力を `next-on-pages` と組み合わせることで Cloudflare Pages へデプロイできます。
-## ライセンス
-MIT License
